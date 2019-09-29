@@ -1,0 +1,28 @@
+
+Questions
+
+1. Why is the fs core module important for Node development?
+
+	The fs core module allows Node, as a server-side language, a way to access files through code.  
+
+
+2. What is the difference between sync and non-sync methods in the fs module?
+
+	Sync methods run consecutively, a prior method must finish running before the next method can begin.  Non-sync methods are able to run concurrently with other non-sync methods. 
+
+
+3. Why are modules used?
+
+	Modules are stand alone programs in Node that can be imported into and run in a Node project.  Modules help to keep the code base for a Node project modular and easy to maintain. 
+
+
+4. Why are libraries such as fs used in Node programming?
+
+	Core libraries such as fs, HTTP, and CommonJS allow Node to perform basic functions needed to run the server-side portion of a web app.  Fs allows Node to read, write, and create files using JavaScript code and the HTTP Core Library allows Node to run an HTTP server.  These are important processes that are needed for Node to interact with the client-side. 
+
+
+
+Code Practice
+Create a Github repo called simple-http-node-server. Create an HTTP server on port 3000 with a request handler that creates a file named hello-world.txt. You will be using the fs module to do this. Write the content: "Hello to this great world" to the hello-world.txt file. Please submit your finished code in your submission.
+
+
