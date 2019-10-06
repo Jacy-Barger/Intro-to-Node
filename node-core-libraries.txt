@@ -3,12 +3,12 @@ Questions
 
 1. Why is the fs core module important for Node development?
 
-	The fs core module allows Node, as a server-side language, a way to access files through code.  
+	The fs core module in Node.js provides useful functions which allow the framework to interact with the file system.  With the fs module, a developer can use Node to create directories and files, copy and delete files, append existing files, and other useful interactions with the file system.  
 
 
 2. What is the difference between sync and non-sync methods in the fs module?
 
-	Sync methods run consecutively, a prior method must finish running before the next method can begin.  Non-sync methods are able to run concurrently with other non-sync methods. 
+	A sync, or blocking, method waits for the current line of code to finish before moving on to the next.  A non-sync, or non-blocking, method executes lines of code without waiting for the previous line to finish executing before moving on to the next one.  
 
 
 3. Why are modules used?
