@@ -1,0 +1,25 @@
+
+Questions
+
+1. How do you import a module?
+
+	Modules are imported by setting a variable equal to the 'require' keyword followed by either a file path surrounded by quotes (if the module is another JavaScript file) or the name of the module surrounded by quotes (if the module is part of core Node or was installed as a dependency).  
+
+
+2. What JavaScript statement do you use to export a module?
+
+	The statement to export a module is module.exports.(code to be exported).  The module.exports object is included in every JavaScript file of every Node application by default.  Whatever code is assigned to module.exports can be imported as modules by other JavaScript files in the application.
+
+
+
+Online Research Questions
+
+1. Are there other ways to export a module?
+
+	//What does this mean by other way?  Does it mean the using different syntax (such as using the 'export' keyword instead of 'module.exports'?
+
+
+
+2. What are ES6 modules and how do they differ from the module we created in this checkpoint? 
+
+	
