@@ -1,0 +1,19 @@
+
+QUESTIONS: 
+
+1. What is a Node module?
+
+	Node modules serve a similar function to JavaScript libraries. They are a collection of functions which, in an organized application, would serve a similar purpose. Node has many built in core modules, but modules can also be added to an app externally using a package manager.  Also, custom modules can be created and added to a JavaScript file in the app.  
+
+
+
+2. What is the main difference between exports and module.exports?
+
+	Module.exports is a JavaScript object (module) with an exports property, and will cause an error if reassigned to a function, string, object, ect. Since module acts as an object, setting module.exports.test1 equal to a function and then setting module.exports.test2 equal to a different function is valid and both functions will be exported.  Exports is a JavaScript variable that happens to be set to module.exports.  Setting exports.function1 to a function is the same as setting module.exports.function1 to a function, since exports references module.exports.  However, if exports is reassigned to a string, function, object, etc, then that instance of exports will not reference module.exports and will not be available for export.
+
+
+
+3. Why is using exports recommended?
+
+	Since exports is simply a reference and cannot reassign module.exports, reassigning the exports variable in a module will not prevent the previous uses of the exports variable from successfully exporting the assigned functions.   
+
